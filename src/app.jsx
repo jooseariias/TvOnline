@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {Route,Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Detais from "./components/detais/Detais";
 import Login from "./components/Login/Login";
@@ -8,7 +8,7 @@ import AdminUser from "./components/admin/AdminUser";
 function App() {
   return (
     <div>
-      <Router>
+   
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/home" element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/admin/Canales" element={<AdminUser />} />
           <Route exact path="/admin/Perfil" element={<AdminUser />} />
         </Routes>
-      </Router>
+ 
     </div>
   );
 }
